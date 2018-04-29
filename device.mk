@@ -148,7 +148,8 @@ PRODUCT_PACKAGES += \
 
 # Launcher
 PRODUCT_PACKAGES += \
-    Launcher3
+    Launcher3 \
+    RuthlessPixelLauncher
 
 # Display
 PRODUCT_PACKAGES += \
