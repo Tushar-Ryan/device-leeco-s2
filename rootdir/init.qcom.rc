@@ -406,6 +406,11 @@ service config_bluetooth /system/bin/sh /system/etc/init.qcom.bt.sh "onboot"
     oneshot
     seclabel u:r:qti_init_shell:s0
 
+service qcom-post-boot /system/bin/sh /init.qcom.post_boot.sh
+    class late_start
+    user root
+    seclabel u:r:qti_init_shell:s0
+
 service hciattach /system/bin/sh /system/etc/init.qcom.bt.sh
     class late_start
     user bluetooth
