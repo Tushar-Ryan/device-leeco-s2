@@ -293,10 +293,11 @@ PRODUCT_PACKAGES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    thermal.msm8952
+    thermanager
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf
+    $(LOCAL_PATH)/configs/thermanager.xml:system/etc/thermanager.xml \
+    $(LOCAL_PATH)/configs/thermanager_X526.xml:system/etc/thermanager_X526.xml
 
 # USB
 PRODUCT_PACKAGES += \
