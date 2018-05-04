@@ -12,6 +12,3 @@ allow fidoca firmware_file:file { r_file_perms };
 binder_call(fidoca, servicemanager);
 
 add_service(fidoca, fidoca_service);
-add_service(fidoca, fidodaemon_service);
-
-
